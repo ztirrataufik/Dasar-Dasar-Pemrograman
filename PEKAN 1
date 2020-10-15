@@ -1,0 +1,6 @@
+nama = input("Masukan nama Anda: ")
+print("halo, ", nama, ". Belajar pemrograman itu menyenangkan.", sep="")
+umur = input("Berapa umur Anda: ")
+print("Umur saya adalah " ,umur, sep="")
+hobi = input("Apakah hobi Anda: ")
+print("Hobi saya adalah " ,hobi, sep="")
