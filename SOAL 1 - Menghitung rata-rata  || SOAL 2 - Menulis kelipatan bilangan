@@ -1,0 +1,13 @@
+print("SOAL 1 - Menghitung rata-rata")
+# Tuliskan program untuk Soal 1 di bawah ini
+x = eval(input("Masukan sebuah bilangan: "))
+y = eval(input("Masukan sebuah bilangan: "))
+z = eval(input("Masukan sebuah bilangan: "))
+print("Hasil rata-rata bilangan tersebut adalah",  (x + y + z) / 3)
+
+
+
+print("SOAL 2 - Menulis kelipatan bilangan")
+# Tuliskan program untuk Soal 2 di bawah ini
+num = eval(input("Masukan sebuah bilangan bulat = "))
+print(num*1, num*2, num*3, num*4, num*5, sep="---")
