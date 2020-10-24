@@ -4,7 +4,7 @@
 # Tuliskan program untuk Soal 1 di bawah ini
 print("Soal 1")
 print("Mencetak bilangan")
-for i in range(10, 100, 3):
+for i in range(100, 1, -2):
   print(i, end=",")
 print()
 
@@ -26,7 +26,6 @@ print()
 print("Soal nomor 3 - Mencetak persegi")
 x = int(input("Masukkan banyaknya angka: "))
 for i in range(x):
-    for j in range(x):
-        print('#', end=' ')
-
-
+  print("\n")
+  for j in range(x):
+    print('#', end=' ')
