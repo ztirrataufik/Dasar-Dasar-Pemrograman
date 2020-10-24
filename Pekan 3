@@ -1,0 +1,32 @@
+# DDP LAB-2
+
+# SOAL 1 - Mencetak bilangan
+# Tuliskan program untuk Soal 1 di bawah ini
+print("Soal 1")
+print("Mencetak bilangan")
+for i in range(10, 100, 3):
+  print(i, end=",")
+print()
+
+# SOAL 2 - Menghitung rata-rata
+# Tuliskan program untuk Soal 2 di bawah ini
+print("Soal 2")
+print("Menghitung rata-rata")
+a = eval(input("Masukan banyaknya angka: "))
+jumlah = 0
+for i in range(a):
+  b = eval(input("Masukan angka: "))
+  jumlah = jumlah+b
+print("jumlah:", jumlah)
+print("Rata-rata : ", jumlah/ a)
+
+# SOAL 3 - Mencetak persegi
+# Tuliskan program untuk Soal 3 di bawah ini
+print()
+print("Soal nomor 3 - Mencetak persegi")
+x = int(input("Masukkan banyaknya angka: "))
+for i in range(x):
+    for j in range(x):
+        print('#', end=' ')
+
+
