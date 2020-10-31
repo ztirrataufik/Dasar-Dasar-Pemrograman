@@ -1,0 +1,67 @@
+# DDP LAB-3
+
+# SOAL 1 - Gunting-Batu-Kertas
+# Tuliskan program untuk Soal 1 di bawah ini
+print("SOAL 1 Gunting-Batu-Kertas")
+# Memasukan pilihan
+pemain1 = input("masukan pilihanmu: ")
+pemain2 = input("masukan pilihanmu: ")
+if (pemain1 == pemain2):
+    print("pemain1 dan pemain2 SERI")
+# Pemain1 dan Pemain2 SERI
+elif (pemain1 == "batu"):
+  if (pemain2 == "kertas"):
+    print("pemain2 menang")
+# Pemain2 mengalahkan batu
+  elif (pemain2 == "gunting"):
+    print("pemain2 kalah")
+# Pemain1 mengalahkan gunting
+elif (pemain1 == "kertas"):
+  if (pemain2 == "gunting"):
+    print("pemain 2 menang")
+# Pemain2 mengalahkan kertas
+  elif (pemain2 == "batu"):
+    print("pemain1 menang")
+# Pemain1 mengalahkan batu
+elif (pemain1 == "gunting"):
+  if (pemain2 == "batu"):
+    print("pemain2 menang")
+# Pemain2 mengalahkan gunting
+  elif (pemain2 == "kertas"):
+    print("pemain2 kalah")
+# Pemain1 mengalahkan kertas
+
+
+
+# SOAL 2 - Toko Buku Bekas
+# Tuliskan program untuk Soal 2 di bawah ini
+print("SOAL 2 - Toko Buku Bekas")
+# masukan jumlah buku yang akan dibeli
+buku = eval(input("jumlah buku yang dibeli: "))
+# jika membeli buku kurang dari sama dengan 10 maka harganya 20000 per buku
+if (buku <= 10):
+  print("harga bukunya adalah : ", buku * 20000)
+# jika membeli buku kurang dari sama dengan 25 maka harganya 18000 per buku
+elif (buku <= 25):
+  print("harga bukunya adalah : ", buku * 18000)
+# jika membeli buku kurang dari sama dengan 50 maka harganya 15000 per buku
+elif (buku <= 50):
+  print("harga bukunya adalah : ", buku * 15000)
+# jika membeli buku kurang dari sama dengan 100 maka harganya 10000 per buku
+elif (buku <= 100 ):
+  print("harga bukunya adalah : ", buku * 10000)
+# jika membeli buku lebih dari sama dengan 100 maka melebihi batas
+else:
+  print("Jumlah buku melebihi batas")
+
+# SOAL 3 - Mencetak Persegi
+# Tuliskan program untuk Soal 3 di bawah ini
+print("SOAL 3 - Mencetak Persegi")
+# mengingput bilangan bulat
+p = int(input("masukan bilangan bulat: "))
+for i in range (1, p+1):
+  if i % 2 == 0:
+    print("$" * p)
+  else:
+    print("#" * p)
+    
