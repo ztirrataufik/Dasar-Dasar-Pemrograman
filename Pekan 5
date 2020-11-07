@@ -1,0 +1,38 @@
+# DDP LAB-4
+# Nama: Z TIRRA TAUFIK
+# NIM: 110120160
+
+# SOAL 1 - Mencetak nama
+# Tuliskan program untuk Soal 1 di bawah ini
+print("SOAL 1 - MENCETAK NAMA")
+# Menginput nama yang akan ditampilkan
+nama = input("Masukkan nama: ")
+# Jumlah banyaknya string
+jumlah = len(nama)
+# dimulai dari 1
+mulai = 1
+# perulangan menggunakan bentuk perulangan while sebanyak jumlah string
+while mulai <= jumlah:
+# mencetak nama
+    print(nama[0:mulai], end='\n')
+# nilai mulai ditambahkan 1
+    mulai = mulai + 1
+
+
+
+
+# SOAL 2 - Validasi teks
+# Tuliskan program untuk Soal 2 di bawah ini
+print("SOAL 2- VALIDASI TEKS")
+# Perulangan
+while True:
+# Masukkan sebuah teks
+  teks = input("Masukkan sebuah teks: ")
+# Mencetak teks sebanyak lebih sama dengan 8, teks diakhiri dengan "YYY" atau "yyy"  (kapital semua atau huruf kecil semua), teks mengandung minimal sebuah frase "NF" (tidak harus kapital semua), dan teks mengandung minimal sebuah angka (0-9)
+  if len(teks) >= 8 and (teks.endswith ("YYY") or teks.endswith ("yyy")) and ("NF" or "nF" or "Nf" or "nf")and any(char.isdigit() for char in teks):
+# Program akan berhenti jika pengguna memasukkan kriteria sebuah teks valid
+    break
+# Mencetak "Teks Tidak Valid" apabila teks tidak sesuai dengan kriteria
+  print("Teks Tidak Valid")
+# Mencetak "Teks Valid" apabila teks sesuai dengan kriteria
+print("Teks Valid")
