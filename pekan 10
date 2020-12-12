@@ -1,0 +1,59 @@
+# Nama: Z Tirra Taufik
+# NIM: 0110120160
+# Kelas: SI05-Weekend
+
+def convert_list(multilist):
+  elemen = [] #menampung nilai
+  for i in multilist: #perulangan pertama untuk semua list yang ada di parameter multilist
+    for angka in i: #perulangan angka untuk isi dari value sebuah list dari variabel list_number
+      elemen.append(angka)#menggunakan fungsi append untuk memasukan value dari variabel angka
+  return elemen #mengembakikan nilai elemen
+    
+def get_nilai(filename, nama):
+  file = open(filename) #variabel file untuk membuka file sesuai parameter filename
+  for indeks in file: #perulangan indeks di dalam file
+    if indeks.split()[0].lower() == nama.lower(): #gunakan split untuk memecahkan string ke dalam sekumpulan stirng yang lebih kecil dengan lower agar text Joni berubah menjadi joni
+      result = float(indeks.split()[1])#variabel nilai index 1
+      result = round(result) #variabel result gunakan round untuk membulatkan suatu nilai
+      return result #mengembalikan nilai
+    else: #jika tidak
+      pass
+  file.close()
+  
+
+def nilai_max(filename):
+  # Tulis kode fungsi nilai_max() di bawah ini
+  # Hapus pass jika implementasi sudah dibuat
+  
+  pass
+
+
+
+
+
+# Mulai baris ini hingga baris paling bawah
+# digunakan untuk mengetes fungsi yang telah dibuat.
+# Tidak perlu mengubah bagian ini.
+# Ketika dijalankan, program akan menampilkan contoh
+# pemanggilan fungsi dan solusi yang seharusnya.
+# Cocokkan hasil pemanggilan fungsi dengan solusi  
+# yang seharusnya.
+def test():
+  r = convert_list([[1,2], [3,4], [5,6]])
+  print(f"convert_list([[1,2], [3,4], [5,6]]) = {r} \n(solusi: [1, 2, 3, 4, 5, 6])")
+  print()
+  r = get_nilai('nilai1.txt','joni')
+  print(f"get_nilai('nilai1.txt','joni') = {r} \n(solusi: 76)")
+  print()
+  r = get_nilai('nilai2.txt','joni')
+  print(f"get_nilai('nilai2.txt','joni') = {r} \n(solusi: None)")
+  print()
+  r = nilai_max('nilai1.txt')
+  print(f"nilai_max('nilai1.txt') = {r} \n(solusi: ('Zack', 88.05)")
+  print()
+  r = nilai_max('nilai2.txt')
+  print(f"nilai_max('nilai2.txt') = {r} \n(solusi: ('Arya', 90.00)")
+  print()
+
+if __name__ == '__main__':
+  test()
